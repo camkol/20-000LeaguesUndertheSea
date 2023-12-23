@@ -1,0 +1,234 @@
+$color_1: #142033;
+$color_2: #639eff;
+$color_3: inherit;
+$color_4: #b3d0ff;
+$color_5: #66a1ff;
+$color_6: #4a4a4a;
+$color_7: #306acc;
+$color_8: #9b9b9b;
+$color_9: #ffffff;
+$font-family_1: "Cormorant Garamond", serif;
+$font-family_2: "Proza Libre", serif;
+$font-family_3: "Proza Libre", sans-serif;
+$background-color_1: #142033;
+$background-color_2: #f2f7ff;
+$background-color_3: #ffffff;
+$background-color_4: #639eff;
+
+/* Universal Styles */
+/* Navigation Bar */
+/* Header */
+/* Book Content */
+/* Word Definitions */
+/* Chapter Navigation Buttons */
+html {
+  font-size: 16px;
+}
+body {
+  min-width: 475px;
+  font-family: $font-family_1;
+}
+nav {
+  position: fixed;
+  z-index: 5;
+  left: -17.8em;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 5rem;
+  padding-right: 2rem;
+  background: url("https://content.codecademy.com/courses/freelance-1/unit-6/nav_background.png")
+    center center repeat;
+  font-family: $font-family_2;
+  font-size: 18px;
+  line-height: 2.2;
+  font-weight: bold;
+  color: $color_1;
+  transition: left 1s ease-out 0.25s;
+  &:hover {
+    left: 0;
+  }
+  .hover-content {
+    margin-right: 3em;
+  }
+  h2 {
+    font-family: $font-family_1;
+    font-size: 2.6em;
+    font-weight: bold;
+    color: $color_2;
+  }
+  h3 {
+    padding-bottom: 1.1em;
+  }
+  ol {
+    list-style: upper-roman outside;
+  }
+  a {
+    text-decoration: none;
+    color: $color_3;
+    transition: color 1s linear 0.5s;
+    &:hover {
+      color: $color_2;
+    }
+  }
+  a.active {
+    color: $color_2;
+  }
+}
+header {
+  padding: 3.125rem 13rem;
+  background-color: $background-color_1;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.1;
+  color: $color_4;
+  h1 {
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 500;
+    color: $color_5;
+  }
+  em {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+.book-content {
+  padding: 4.75rem 20%;
+  background-color: $background-color_2;
+  font-family: $font-family_3;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: $color_6;
+  cursor: default;
+  h3 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 2.1;
+    font-weight: bold;
+    color: $color_1;
+  }
+  .prose {
+    margin-bottom: 4.75rem;
+  }
+}
+.chapter {
+  color: $color_2;
+  .number {
+    display: block;
+    font-size: 1.25rem;
+  }
+  .name {
+    display: block;
+    font-size: 2.25rem;
+  }
+}
+.definable {
+  display: inline;
+  .word {
+    color: $color_2;
+    transition: color 0.5s ease-in 0.5s;
+    &:hover {
+      color: $color_7;
+    }
+  }
+  .definition-container {
+    position: fixed;
+    z-index: 10;
+    top: -100%;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem 4rem 2rem 4rem;
+    background-color: $background-color_3;
+    box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    font-family: $font-family_3;
+    font-size: 1.5rem;
+    transition: top 1s linear 0.25s, opacity 1s linear 0.5s;
+  }
+  &:hover {
+    .definition-container {
+      top: 0;
+      opacity: 1;
+    }
+  }
+}
+.definition-container {
+  h4 {
+    font-family: $font-family_1;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 2.1;
+    color: $color_5;
+  }
+  .information {
+    display: block;
+    line-height: 2.5;
+    color: $color_8;
+  }
+  .definitions {
+    list-style: inside decimal;
+    line-height: 1.7;
+    color: $color_6;
+  }
+}
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13rem;
+  padding: 0 2rem;
+  background-color: $background-color_4;
+  opacity: 0.3;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: $color_9;
+  transition: opacity 1s ease 1s;
+  &:hover {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 810px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    padding: 3.125rem 8rem 3.125rem 10rem;
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .book-content {
+    padding-right: 10%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  html {
+    font-size: 12px;
+  }
+  .book-content {
+    padding-right: 1%;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .button {
+    width: auto;
+    padding: 1rem 2rem;
+    .action {
+      display: none;
+    }
+  }
+}
