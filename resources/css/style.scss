@@ -198,6 +198,15 @@ header {
     opacity: 1;
   }
 }
+@media only screen and (max-width: 930px) {
+  .button {
+    width: auto;
+    padding: 1rem 2rem;
+    .action {
+      display: none;
+    }
+  }
+}
 @media only screen and (max-width: 810px) {
   html {
     font-size: 14px;
@@ -221,14 +230,5 @@ header {
   }
   .book-content {
     padding-right: 1%;
-  }
-}
-@media only screen and (max-width: 930px) {
-  .button {
-    width: auto;
-    padding: 1rem 2rem;
-    .action {
-      display: none;
-    }
   }
 }

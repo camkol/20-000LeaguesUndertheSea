@@ -9,3 +9,4 @@
 ## Notes
 
 -Added SASS
+-Improved responsiveness
