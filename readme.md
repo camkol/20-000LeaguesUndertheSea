@@ -10,3 +10,4 @@
 
 -Added SASS
 -Improved responsiveness
+-Worked on images and made self-sufficient
