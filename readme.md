@@ -4,10 +4,10 @@
 
 1. HTML
 2. CSS
-   -SASS
+   - SASS
 
 ## Notes
 
--Added SASS
--Improved responsiveness
--Worked on images and made self-sufficient
+- Added SASS
+- Improved responsiveness
+- Worked on images and made self-sufficient
