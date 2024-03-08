@@ -22,8 +22,7 @@ nav {
   height: 100%;
   padding-left: 5rem;
   padding-right: 2rem;
-  background: url("https://content.codecademy.com/courses/freelance-1/unit-6/nav_background.png")
-    center center repeat;
+  background: url("https://content.codecademy.com/courses/freelance-1/unit-6/nav_background.png") center center repeat;
   font-family: "Proza Libre", serif;
   font-size: 18px;
   line-height: 2.2;
@@ -220,4 +219,4 @@ header h2 {
   .book-content {
     padding-right: 1%;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
